@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<script type="text/javascript">
+	
+	function comenzar(){
+
+		var elemento=document.getElementById("lienzo1");
+
+		lienzo=elemento.getContext("2d");
+
+		/*
+		lienzo.fillStyle="#4355CD";
+		lienzo.strokeStyle="#00FF00";
+		lienzo.globalAlpha=0.7;	
+		lienzo.fillRect(110,110,100,100);
+		lienzo.clearRect(130,130,40,40);
+		lienzo.strokeRect(250,250,100,100);
+
+		var degradado=lienzo.createLinearGradient(0,150,500,150);
+			degradado.addColorStop(0,"red");
+			degradado.addColorStop(1,"green");
+			lienzo.fillStyle=degradado;
+			lienzo.fillRect(0,0,500,300);
+		
+		var degradado=lienzo.createRadialGradient(250,150,50,250,150,300);
+			degradado.addColorStop(0,"red");
+			degradado.addColorStop(1,"green");
+			lienzo.fillStyle=degradado;
+			lienzo.fillRect(0,0,500,300);
+
+
+		lienzo.beginPath();
+		lienzo.moveTo(50,100);
+		lienzo.lineTo(400,200);
+		lienzo.lineTo(100,50);
+		lienzo.closePath();
+		lienzo.stroke();
+		lienzo.fill();
+		llienzo.clip();*/
+
+		lienzo.beginPath();
+		lienzo.arc(100,100,50,0,Math.PI*2,false);
+		lienzo.stroke();
+
+
+	}	
+
+	window.addEventListener("load",comenzar,false);
+
+	</script>
+
+	<style type="text/css">
+		
+		section{
+			width:500px;
+			position:relative;
+			margin:auto;
+		}
+
+		#lienzo1{
+			background-color: #F00;
+			width:500px;
+			height:300px;
+		}
+
+	</style>
+
+	<title></title>
+
+</head>
+
+<body>
+
+	<section id="dibujo">
+		
+		<canvas id="lienzo1">
+			
+			Su navegador no soporte el elemento canvas en Html5
+
+		</canvas>	
+
+	</section>
+
+</body>
+
+</html>

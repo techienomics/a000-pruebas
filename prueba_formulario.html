@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+<form class="" action="scrip.php" method="post" >
+	<fieldset>
+		<legend>
+			Esto es un primer bloque de codigo
+		</legend>
+		<label for="fullName">Nombre Completo:</label><input type="text" name="fullName" id="fullName" value="Victor"><br>
+		<label for="userEmail">Email:</label><input type="email" name="userEmail" id="userEmail"><br>
+		<label for="userPassword">Genera una Contraseña:</label><input type="password" name="userPassword" id="userPassword"><br>
+		<label for="userPasswordControl">Repite la Contraseña:</label><input type="password" name="userPasswordControl" id="userPasswordControl"><br>
+		<label>Telefono:<input type="tel" name="userPhone" placeholder="+54 11 3383 1800"></label><br> <!-- otra opcion para vicnular labael con imput, montarlo dentro -->
+	</fieldset>
+	<fieldset>
+		<legend>
+			Esto es un segundo bloque de codigo
+		</legend>
+		<label for="productQuantity">Cantidad:</label><input type="text" name="fullName" id="productQuantity"><br>
+	</fieldset>
+	<fieldset>
+		<legend>
+			Seleccione Medio de Pago
+		</legend>
+		<label for="creditCardVisa">Visa (Credito):</label><input type="radio" name="paymentMethod" id="creditCardVisa" value="creditV"><br>
+		<label for="creditCardVisa">Visa (Debito):</label><input type="radio" name="paymentMethod" id="creditCardVisa" value="creditV"><br>
+		<label for="creditCardMastercard">Mastercard (Credito):</label><input type="radio" name="paymentMethod" id="creditCardMastercard" value="creditMA"><br>
+		<label for="cashPayment">Efectivo:</label><input type="radio" name="paymentMethod" id="cashPayment" value="cash"><br>
+	</fieldset>
+	<fieldset>
+		<legend>
+			Como deseo ser conectado
+		</legend>
+		<label for="telContact">Correo Electronico:</label><input type="checkbox" name="paymentMethod" id="telContact"><br>
+		<label for="emailContact">Telefono:</label><input type="checkbox" name="paymentMethod" id="emailContact"><br>
+		<label for="timeContact">Horario a ser contactado:</label>
+		<select name="">
+			<option value="AR">Argentina</option>
+			<option value="BR">Brasil</option>
+			<optgroup >Resto del Mundo</optgroup>
+			<option value="CG">Congo</option>
+		</select>
+	</fieldset>
+	<fieldset>
+		<legend>
+			Comentario adicional
+		</legend>
+		<label for="preComment">Deja un comentario:</label>
+		<textarea type="message" name="paymentMethod" id="preComment"></textarea><br>
+	</fieldset>
+	<button type="reset">Borrar</button><br>
+	<button type="submit">Enviar</button>
+	<!--input type="submit" name="buyNow" value="Comprar Ahora"-->
+</form>
+</body>
+</html>

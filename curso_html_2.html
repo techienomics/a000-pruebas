@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+
+		function tipoFlor(){
+			alert('Pensamientos')
+		}
+		
+		var imagenes;
+
+		function crecer(){
+			imagenes.width=50;
+			imagenes.height=50;
+		}
+
+		function original(){
+			imagenes.width=150;
+			imagenes.height=150;
+		}
+
+		/*
+
+		function deTipoFlor(){
+			imagenes=document.getElementsByTagName("img")[0];
+			imagenes.addEventListener("click", tipoFlor, false);
+		}
+		
+
+		function manejaFlor(){
+			imagenes=document.getElementsByTagName("img")[0];
+			imagenes.addEventListener("mouseover", crecer, false);
+			imagenes.addEventListener("mouseout", original, false);
+			imagenes.addEventListener("click", tipoFlor, false);
+		}
+		
+		*/
+
+		function manejaFlor(){
+			
+			for (var i=0; i<imagenes.lenght; i++) {
+				
+				imagenes[i]=document.getElementsByTagName("img")[0];
+				
+				imagenes.addEventListener("mouseover", function() {imagenes[i].width=50;imagenes[i].height=50;}, false);
+				imagenes.addEventListener("mouseout", function() {imagenes[i].width=150;imagenes[i].height=150;}, false);
+				imagenes.addEventListener("click", tipoFlor, false);
+			}
+
+
+		window.onload=manejaFlor;
+
+	</script>
+
+	<title></title>
+</head>
+
+<body>                                     <!--Organización del body en html5-->
+	<header> </header>     <!--Este es el Header del body-->
+	<nav> </nav>               <!--Barra de Navegación del body-->
+	<aside> </aside>          <!--Barra Lateral del body-->
+	<section>     <!--Cuerpo Principal del body-->
+	
+	<p><img src="Finance-Banner.png"></p>
+	<p><img src="Finance-Banner.png"></p>
+	</section>
+
+	<footer> </footer>        <!--Footer del body para contenido institucional-->
+
+</body>
+</html>

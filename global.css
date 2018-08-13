@@ -1,0 +1,125 @@
+#charset "utf-8";
+/* CSS Document */
+
+/* Reset CSS */
+
+/* Elementos */
+
+body{
+	font-size: 75%;
+}
+
+header{
+	background-color:orange;
+}
+
+nav{
+
+}
+
+aside{
+float:left;
+height:300px;
+}
+
+section{
+margin-left:200px;
+width: 95% auto;
+border-top: 0.5px dashed #999;
+}
+
+footer{
+	clear: both;
+	padding-top:50px;
+}
+
+h1{
+	color:white;
+	font:normal 2.4em Verdana, Genova, sans-serif;
+}
+h2{}
+h3{}
+
+ul{}
+li{
+	background-color:grey;
+	display:inline;
+}
+
+blockquote{}
+
+article{
+	float:left;
+}
+
+hgroup{}
+figure{}
+figure img{
+	padding:4px;
+	background:#666;
+	border: 3px solid #F00;
+	border-radius: 10px 10px 10px 10px;
+	-webkit-transition: -webkit-transform 0.3s ease-in-out 0.1s;	
+}
+
+figure img:hover{
+	-webkit-transform:scale(1.05);
+}
+
+figcaption{
+	margin-top: 5px;
+}
+p{}
+
+small{}
+
+
+/* ID */
+
+#cabeceraweb{
+	width: 500px;
+	background-color: #00F;
+	text-align: center;
+	margin:15px auto;
+	padding: 15px;
+	border: 3px solid #F00;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: grey 3px 3px 10px;
+	text-shadow: #FFF 2px 2px 3px;
+	background: -moz-linear-gradient(bottom,#00F,#3FF);
+	background: -webkit-radial-gradient(center, ellipse, ,#00F,#3FF);
+	background: -ms-linear-gradient(bottom,#00F,#3FF);
+	background: -o-linear-gradient(bottom,#00F,#3FF);
+	/* -webkit-transform:rotate(5deg);*/
+	/* -webkit-transform:skew(15deg);*/
+	/* -webkit-transform:scale(0.5,-0.5);*/
+	/* outline: 2px dashed #00F;*/
+	/* outline-offset: 15px;*/
+	-webkit-transition: -webkit-transform 1s ease 0.5s;
+}
+
+#cabeceraweb:hover{
+	-webkit-transform:rotate(5deg);
+}
+
+#barralateral{
+	background-color: blue;
+}
+
+#pieprincipal{
+	background-color: red;
+}
+
+/* Clases */
+
+
+/* Familia de Fuentes 
+
+@font-face{
+	font-family:'Mi Propia Fuente';
+	src:url('afafa.ttf');
+}
+
+
+*/
+
